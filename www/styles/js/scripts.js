@@ -124,19 +124,17 @@
    
    jQuery(document).on("click", ".sidebar-toggle", function () {
        var Menu = $(".main-sidebar");
-       var fondo = $(".bknd-container");
+       
        if (Menu.hasClass('CorrerMenu'))
        {
            $(".ft-appengine-workspace-select").hide();
            Menu.removeClass('CorrerMenu')
-           fondo.removeClass('modal-backdrop2');
+
        }
        else
        {
            $(".ft-appengine-workspace-select").show();
            Menu.addClass('CorrerMenu')
-           fondo.addClass('modal-backdrop2');
-
 
        }
    })
@@ -151,13 +149,13 @@
        }
    })
 
-   jQuery(document).on("click", ".main-content", function () {
+   jQuery(document).on("click", ".bknd-container", function () {
        var Menu = $(".main-sidebar");
-       var fondo = $(".bknd-container");
+
        if (Menu.hasClass('CorrerMenu')) {
            $(".ft-appengine-workspace-select").hide();
            Menu.removeClass('CorrerMenu')
-           fondo.removeClass('modal-backdrop2');
+
        }
    })
 
